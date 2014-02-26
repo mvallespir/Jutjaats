@@ -65,6 +65,7 @@ public class SalaTest2 {
      * Test of datesOcupades method, of class Sala.
      *
      *Test per comprovar el funcionament correcte de treure un llistat de dates ocupades.
+     * Desde  web
      */
     @Test
     public void testDatesOcupades(){
