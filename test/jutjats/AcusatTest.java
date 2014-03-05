@@ -73,7 +73,6 @@ public class AcusatTest {
         Boolean expResult = true;
         Boolean result = instance.afegirJudici(nouJudici);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
     
     /**
