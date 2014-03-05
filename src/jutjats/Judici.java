@@ -185,6 +185,13 @@ class Judici {
             return false;
         }
     }
+
+    @Override
+    public String toString() {
+        return "Judici{" + "delicte=" + delicte + ", jutge=" + jutge + ", advocatAcusacio=" + advocatAcusacio + ", advocatDefensor=" + advocatDefensor + ", sentencia=" + sentencia + ", sala=" + sala + '}';
+    }
+    
+    
 }
 //<editor-fold
  //</editor-fold>

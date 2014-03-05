@@ -30,9 +30,9 @@ public class JudiciTest2 {
     /**
      * Test of setDelicte method, of class Judici.
      *
-     * Cream un nou delicte i li afegim un acusat. DEspres cream un judici i a aquest,
-     * l'insertam el delicte anteriorment creat i comprovam que s'ha insertat be el delicte
-     * i que a l'acusat se l'hi ha afegit un judici.
+     * Cream un nou delicte i li afegim un acusat. DEspres cream un judici i a
+     * aquest, l'insertam el delicte anteriorment creat i comprovam que s'ha
+     * insertat be el delicte i que a l'acusat se l'hi ha afegit un judici.
      */
     @Test
     public void testSetDelicte() {
@@ -111,14 +111,14 @@ public class JudiciTest2 {
         Boolean expResult = true;
         Boolean result = instance.setSentencia(sentencia);
         assertEquals(expResult, result);
-        
-        if(!(expResult.equals(result) && instance.getSentencia().equals(sentencia))){
+
+        if (!(expResult.equals(result) && instance.getSentencia().equals(sentencia))) {
             fail("Error insercio sentencia");
         } else {
             System.out.println(instance.getSentencia().toString());
         }
-        
-        
+
+
     }
 
     /**
@@ -134,14 +134,14 @@ public class JudiciTest2 {
         Boolean expResult = true;
         Boolean result = instance.setSala(sala);
         assertEquals(expResult, result);
-        
-        if(!(expResult.equals(result) && instance.getSala().equals(sala))){
+
+        if (!(expResult.equals(result) && instance.getSala().equals(sala))) {
             fail("Error inserció sala");
         } else {
             System.out.println(instance.getSala().toString());
         }
-        
-        
+
+
     }
 
     /**
