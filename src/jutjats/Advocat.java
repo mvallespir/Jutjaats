@@ -47,7 +47,7 @@ public class Advocat {
     /**
      * Es pasa per parametre l'index del Judici a treure, en cas que l'index
      * sigui major o igual a 0 i menor a la grandaria de la llista retornara el
-     * Judici en cas contrari retornara null
+     * Judici en cas contrari retornara null.
      */
     public Judici treureJudiciAcusacio(int index) {
 
@@ -67,7 +67,7 @@ public class Advocat {
     /**
      * Crea un Array List de Judici provisional on fica tots els judicis com
      * a defensor, com a acusació i retorna l'Array List.
-     * @return 
+     * 
      */
     public ArrayList<Judici> mostraLlistaJudicisComplet(){
         
@@ -84,7 +84,7 @@ public class Advocat {
         return provisional;
     }
 
-    //Afegeix un Judici en cas de que sigui null retorna false sinos true.
+    //Afegeix un Judici en cas de que sigui null retorna false sino true.
     public Boolean afegirJudiciDefensor(Judici nouJudici) {
 
         if (nouJudici != null) {
@@ -98,8 +98,8 @@ public class Advocat {
 
     /**
      * Es pasa per parametre l'index del Judici a treure, en cas que l'index
-     * sigui major o igual a 0 i menor a la grandari de la llista retornara el
-     * Judici en cas contrari retornara null
+     * sigui major o igual a 0 i menor a la grandaria de la llista retornara el
+     * Judici en cas contrari retornara null.
      */
     public Judici treureJudiciDefensor(int index) {
 

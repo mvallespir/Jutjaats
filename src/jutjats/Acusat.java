@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package jutjats;
 
 import java.text.ParseException;
@@ -13,7 +9,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author MVC
+ * @author MVC i RSM
  */
 class Acusat {
 
@@ -50,8 +46,8 @@ class Acusat {
 
     /**
      * Es pasa per parametre l'index del Judici a treure, en cas que l'index
-     * sigui major o igual a 0 i menor a la grandari de la llista retornara el
-     * Judic en cas contrari retornara null
+     * sigui major o igual a 0 i menor a la grandaria de la llista retornara el
+     * Judici en cas contrari retornara null.
      */
     public Judici treureJudici(int index) {
 
@@ -112,11 +108,11 @@ class Acusat {
         return sdf.format(dataNaixament);
     }
 
-    //Pasant-l'hi un string amb la data el transforma i retorna el tipus Date
+    //Pasant-l'hi un string amb la data el transforma i retorna al tipus Date.
     private Date afegirDataNaixament(String dataDelicte) {
         String format = "dd-MM-yyyy";
         SimpleDateFormat sdf = new SimpleDateFormat(format);
-        //Transforma un String a Date
+        //Transforma un String a Date.
         Date dataNova = null;
         try {
             dataNova = sdf.parse(dataDelicte);
