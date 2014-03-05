@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package jutjats;
 
 import java.text.ParseException;
@@ -13,7 +9,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author MVC
+ * @author MVC i RSM
  */
 public class Jutge {
 

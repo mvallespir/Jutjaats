@@ -21,7 +21,7 @@ public class Delicte {
         this.descripcio = descripcio;
     }
 
-    //Es pasa per parametre l'acusat, comprova que no sigui null i que no en tengui cap ja insertat
+    //Es pasa per parametre l'acusat, comprova que no sigui null i que no en tengui cap ja insertat.
     public Boolean afegirAcusat(Acusat nouAcusat) {
 
         if (this.acusat == null && nouAcusat != null) {
@@ -44,7 +44,7 @@ public class Delicte {
         return sdf.format(data);
     }
 
-    //Pasant-l'hi un string amb la data el transforma i retorna el tipus Date
+    //Pasant-l'hi un string amb la data el transforma i retorna el tipus Date.
     private Date afegirData(String dataDelicte) {
         String format = "dd-MM-yyyy";
         SimpleDateFormat sdf = new SimpleDateFormat(format);

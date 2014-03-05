@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package jutjats;
 
 import java.text.ParseException;
@@ -13,7 +9,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author MVC
+ * @author MVC i RSM
  */
 class Judici {
 
@@ -35,12 +31,10 @@ class Judici {
 
     /**
      * Es pasa per parametre l'objecte delicte, es comprova que no sigui null i
-     * que no hi hagui cap delicte afegit a aquest judici. Si es compleixen les
+     * que no hi hagi cap delicte afegit a aquest judici. Si es compleixen les
      * condicions inserta el delicte a l'objete Judici i afegeix aquest judici a
-     * l'acusat implicat. S'accedeix al acusat a traves del delicte.
+     * l'acusat implicat. S'accedeix a l'acusat a traves del delicte.
      *
-     * @param delicte
-     * @return
      */
     public Boolean setDelicte(Delicte delicte) {
 
@@ -59,12 +53,10 @@ class Judici {
 
     /**
      * Es pasa per parametre l'objecte jutge, es comprova que no sigui null i
-     * que no hi hagui cap jutge afegit a aquest judici. Si es compleixen les
+     * que no hi hagi cap jutge afegit a aquest judici. Si es compleixen les
      * condicions inserta el jutge a l'objete Judici i afegeix aquest judici al
      * llistat de judicis del Jutge.
      *
-     * @param delicte
-     * @return
      */
     public Boolean setJutge(Jutge jutge) {
 
@@ -81,14 +73,12 @@ class Judici {
     }
 
     /**
-     * Es pasa per parametre l'objecte Advocat Acusació, es comprova que no
-     * sigui null i que no hi hagui cap advocat de acusació afegit a aquest
-     * judici. Si es compleixen les condicions inserta l'advocat d'acusació a
+     * Es pasa per parametre l'objecte Advocat Acusacio, es comprova que no
+     * sigui null i que no hi hagi cap advocat de acusacio afegit a aquest
+     * judici. Si es compleixen les condicions inserta l'advocat d'acusacio a
      * l'objete Judici i afegeix aquest judici al llistat de judicis com
      * Acusacio de l'advocat.
      *
-     * @param delicte
-     * @return
      */
     public Boolean setAdvocatAcusacio(Advocat advocatAcusacio) {
 
@@ -106,13 +96,11 @@ class Judici {
 
     /**
      * Es pasa per parametre l'objecte Advocat Defensor, es comprova que no
-     * sigui null i que no hi hagui cap advocat defensor afegit a aquest judici.
+     * sigui null i que no hi hagi cap advocat defensor afegit a aquest judici.
      * Si es compleixen les condicions inserta l'advocat defensor a l'objete
      * Judici i afegeix aquest judici al llistat de judicis com Defensor de
      * l'advocat.
      *
-     * @param delicte
-     * @return
      */
     public Boolean setAdvocatDefensor(Advocat advocatDefensor) {
         
@@ -130,11 +118,9 @@ class Judici {
 
     /**
      * Es pasa per parametre l'objecte sentencia, es comprova que no sigui null
-     * i que no hi hagui cap sentencia afegida a aquest judici. Si es compleixen
+     * i que no hi hagi cap sentencia afegida a aquest judici. Si es compleixen
      * les condicions inserta la sentencia a l'objete Judici.
      *
-     * @param delicte
-     * @return
      */
     public Boolean setSentencia(Sentencia sentencia) {
 
@@ -151,11 +137,10 @@ class Judici {
 
     /**
      * Es pasa per parametre l'objecte Sala, es comprova que no sigui null
-     * i que no hi hagui cap sala afegida a aquest judici. Si es compleixen
+     * i que no hi hagi cap sala afegida a aquest judici. Si es compleixen
      * les condicions inserta la sala a l'objete Judici i afegeix aquest judici
      * al llistat de judicis de la sala.
-     * @param delicte
-     * @return 
+     * 
      */
     public Boolean setSala(Sala sala) {
 
@@ -171,7 +156,7 @@ class Judici {
         return llistatDates;
     }
 
-     //Pasant-l'hi un string amb la data el transforma i retorna el tipus Date
+     //Pasant-l'hi un string amb la data el transforma i retorna el tipus Date.
     public Boolean afegirDate(String dateNove) {
         this.llistatDates = llistatDates;
         try {
@@ -193,5 +178,3 @@ class Judici {
     
     
 }
-//<editor-fold
- //</editor-fold>
