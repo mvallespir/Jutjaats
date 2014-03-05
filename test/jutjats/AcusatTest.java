@@ -75,4 +75,12 @@ public class AcusatTest {
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
     }
+    
+    /**
+     * Test of llistatCasosAcusat method, of class Acusat.
+     * 
+     * Li passam un judici correcte i ens ha de tornar true. (Ha anat be).
+     */
+    
+    
 }
