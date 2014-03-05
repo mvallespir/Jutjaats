@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author MVC
+ * @author MVC & RSM
  */
 public class Advocat {
     
