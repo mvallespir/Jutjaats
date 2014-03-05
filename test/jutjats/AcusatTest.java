@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package jutjats;
 
 import java.util.ArrayList;
@@ -12,7 +8,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author MVC
+ * @author MVC i RSM
  */
 public class AcusatTest {
 
@@ -28,8 +24,6 @@ public class AcusatTest {
     }
 
     /**
-     * Test of afegirJudici method, of class Acusat.
-     *
      * Li passam un judici null i ens ha de retornar false. (Ha anat malament).
      */
     @Test
@@ -40,12 +34,9 @@ public class AcusatTest {
         Boolean expResult = false;
         Boolean result = instance.afegirJudici(nouJudici);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
-     * Test of treureJudici method, of class Acusat.
-     *
      * Li passam un index fora de rang, i ens ha de tornar null.
      */
     @Test
@@ -60,8 +51,6 @@ public class AcusatTest {
     }
 
     /**
-     * Test of afegirJudici method, of class Acusat.
-     *
      * Li passam un judici correcte i ens ha de tornar true. (Ha anat be).
      */
     @Test
@@ -75,9 +64,7 @@ public class AcusatTest {
     }
 
     /**
-     * Test of llistatCasosAcusat method, of class Acusat.
-     *
-     * Mostrar un llistat dels judicis que esta implicat un acusat
+     * Mostrar un llistat dels judicis que esta implicat un acusat.
      */
     @Test
     public void testMostrarJudicisImplicat() {
@@ -98,7 +85,6 @@ public class AcusatTest {
         for (Judici judici : instance.getLlistaJudicis()) {
             System.out.println(judici.toString());
         }
-
 
     }
 }

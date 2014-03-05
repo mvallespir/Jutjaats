@@ -12,7 +12,7 @@ import java.util.logging.Logger;
  * @author MVC & RSM
  */
 public class Advocat {
-    
+
     private String nom;
     private String llinatges;
     private Date dataNaixament;
@@ -20,7 +20,6 @@ public class Advocat {
     private String poblacio;
     private ArrayList<Judici> llistaJudicisDefensor;
     private ArrayList<Judici> llistaJudicisAcusacio;
-    
 
     public Advocat(String nom, String llinatges, String dataNaixament, String direccio, String poblacio) {
         this.nom = nom;//Afegeix un Judici en cas de que sigui null retorna false sino true.
@@ -31,7 +30,7 @@ public class Advocat {
         llistaJudicisDefensor = new ArrayList<>();
         llistaJudicisAcusacio = new ArrayList<>();
     }
-    
+
     //Afegeix un Judici en cas de que sigui null retorna false sino true.
     public Boolean afegirJudiciAcusacio(Judici nouJudici) {
 
@@ -63,24 +62,24 @@ public class Advocat {
     public ArrayList<Judici> getLlistaJudicisAcusacio() {
         return llistaJudicisAcusacio;
     }
-    
+
     /**
-     * Crea un Array List de Judici provisional on fica tots els judicis com
-     * a defensor, com a acusació i retorna l'Array List.
-     * 
+     * Crea un Array List de Judici provisional on fica tots els judicis com a
+     * defensor, com a acusació i retorna l'Array List.
+     *
      */
-    public ArrayList<Judici> mostraLlistaJudicisComplet(){
-        
+    public ArrayList<Judici> mostraLlistaJudicisComplet() {
+
         ArrayList<Judici> provisional = new ArrayList<>();
-        
-        for(Judici acu:llistaJudicisAcusacio){
+
+        for (Judici acu : llistaJudicisAcusacio) {
             provisional.add(acu);
         }
-        
-        for(Judici def:llistaJudicisDefensor){
+
+        for (Judici def : llistaJudicisDefensor) {
             provisional.add(def);
         }
-        
+
         return provisional;
     }
 
@@ -115,7 +114,7 @@ public class Advocat {
     public ArrayList<Judici> getLlistaJudicisDefensor() {
         return llistaJudicisDefensor;
     }
-    
+
     public String getNomComplet() {
         return nom + " " + llinatges;
     }
@@ -177,6 +176,5 @@ public class Advocat {
     public String toString() {
         return "Advocat: " + "Nom: " + nom + ", Llinatges: " + llinatges + ", Data Naixament: " + dataNaixament + ", Direccio: " + direccio + ", Poblacio: " + poblacio + '.';
     }
-    
-    
+
 }

@@ -25,7 +25,7 @@ public class Jutge {
         llistaJudicis = new ArrayList<>();
     }
 
-    //Afegeix un Judici en cas de que sigui null retorna false sinos true.
+    //Afegeix un Judici en cas de que sigui null retorna false sino true.
     public Boolean afegirJudici(Judici nouJudici) {
 
         if (nouJudici != null) {
@@ -39,8 +39,8 @@ public class Jutge {
 
     /**
      * Es pasa per parametre l'index del Judici a treure, en cas que l'index
-     * sigui major o igual a 0 i menor a la grandari de la llista retornara el
-     * Judici en cas contrari retornara null
+     * sigui major o igual a 0 i menor a la grandaria de la llista retornara el
+     * Judici en cas contrari retornara null.
      */
     public Judici treureJudici(int index) {
 
@@ -80,7 +80,7 @@ public class Jutge {
         return sdf.format(dataNaixament);
     }
 
-    //Pasant-l'hi un string amb la data el transforma i retorna el tipus Date
+    //Pasant-l'hi un string amb la data el transforma i retorna el tipus Date.
     private Date afegirDataNaixament(String dataDelicte) {
         String format = "dd-MM-yyyy";
         SimpleDateFormat sdf = new SimpleDateFormat(format);
@@ -98,6 +98,5 @@ public class Jutge {
     public String toString() {
         return "Jutge:" + "Nom: " + nom + ", Llinatges: " + llinatges + ", Data Naixament: " + getDataNaixament() + '.';
     }
-    
-    
+
 }

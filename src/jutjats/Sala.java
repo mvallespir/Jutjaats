@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package jutjats;
 
 import java.util.ArrayList;
@@ -9,7 +5,7 @@ import java.util.Date;
 
 /**
  *
- * @author MVC
+ * @author MVC i RSM
  */
 public class Sala {
 
@@ -24,9 +20,9 @@ public class Sala {
     }
 
     /**
-     * Recorr tots els judicis de la Sala i va agafant totes les dates ocupades 
+     * Recorr tots els judicis de la Sala i va agafant totes les dates ocupades
      * i les fica dins un array list que al final retorna.
-     * @return
+     *
      */
     public ArrayList<Date> datesOcupade() {
 
@@ -57,8 +53,8 @@ public class Sala {
 
     /**
      * Es pasa per parametre l'index del Judici a treure, en cas que l'index
-     * sigui major o igual a 0 i menor a la grandari de la llista retornara el
-     * Judic en cas contrari retornara null
+     * sigui major o igual a 0 i menor a la grandaria de la llista retornara el
+     * Judic en cas contrari retornara null.
      */
     public Judici treureJudici(int index) {
 

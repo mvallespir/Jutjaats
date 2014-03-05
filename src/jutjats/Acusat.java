@@ -30,8 +30,8 @@ class Acusat {
     }
 
     /**
-     * Afegeix un Judici a l'array list, si l'objecte passat es null retorna fals
-     * sino retorna true.
+     * Afegeix un Judici a l'array list, si l'objecte passat es null retorna
+     * fals sino retorna true.
      */
     public Boolean afegirJudici(Judici nouJudici) {
 

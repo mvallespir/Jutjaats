@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package jutjats;
 
 import org.junit.AfterClass;
@@ -11,7 +7,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author MVC
+ * @author MVC i RSM
  */
 public class JudiciTest2 {
 
@@ -117,7 +113,6 @@ public class JudiciTest2 {
             System.out.println(instance.getSentencia().toString());
         }
 
-
     }
 
     /**
@@ -139,7 +134,6 @@ public class JudiciTest2 {
         } else {
             System.out.println(instance.getSala().toString());
         }
-
 
     }
 

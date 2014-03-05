@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package jutjats;
 
 import java.util.ArrayList;
@@ -12,7 +8,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author MVC
+ * @author MVC i RSM
  */
 public class JutgeTest {
 
@@ -41,7 +37,6 @@ public class JutgeTest {
         Boolean expResult = false;
         Boolean result = instance.afegirJudici(nouJudici);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
@@ -57,7 +52,6 @@ public class JutgeTest {
         Judici expResult = null;
         Judici result = instance.treureJudici(index);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
@@ -74,7 +68,6 @@ public class JutgeTest {
         Boolean expResult = true;
         Boolean result = instance.afegirJudici(nouJudici);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**

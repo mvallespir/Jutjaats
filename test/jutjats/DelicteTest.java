@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package jutjats;
 
 import org.junit.AfterClass;
@@ -11,24 +7,24 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author MVC
+ * @author MVC i RSM
  */
 public class DelicteTest {
-    
+
     public DelicteTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
 
     /**
      * Test of afegirAcusat method, of class Delicte.
-     * 
+     *
      * Es comprova que no es pasi un acusat null.
      */
     @Test
@@ -39,12 +35,11 @@ public class DelicteTest {
         Boolean expResult = false;
         Boolean result = instance.afegirAcusat(nouAcusat);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
      * Test of afegirAcusat method, of class Delicte.
-     * 
+     *
      * Es comprova el cas correcte.
      */
     @Test
@@ -55,7 +50,6 @@ public class DelicteTest {
         Boolean expResult = true;
         Boolean result = instance.afegirAcusat(nouAcusat);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
 }

@@ -1,10 +1,5 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package jutjats;
 
-import java.util.ArrayList;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -12,25 +7,24 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author MVC
+ * @author MVC i RSM
  */
 public class SalaTest {
-    
+
     public SalaTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
 
-
     /**
      * Test of afegirJudici method, of class Sala.
-     * 
+     *
      * Es vol provar que afegint un judici null ens torni fals.
      */
     @Test
@@ -41,14 +35,13 @@ public class SalaTest {
         Boolean expResult = false;
         Boolean result = instance.afegirJudici(nouJudici);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
      * Test of treureJudici method, of class Sala.
-     * 
+     *
      * Es vol comprovar un velor fora de index inferior.
-     * 
+     *
      */
     @Test
     public void testTreureJudici() {
@@ -58,9 +51,6 @@ public class SalaTest {
         Judici expResult = null;
         Judici result = instance.treureJudici(index);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
-
-
 
 }

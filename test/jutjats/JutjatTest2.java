@@ -1,10 +1,5 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package jutjats;
 
-import java.util.ArrayList;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -12,7 +7,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author MVC
+ * @author MVC i RSM
  */
 public class JutjatTest2 {
 
@@ -40,12 +35,11 @@ public class JutjatTest2 {
         Boolean expResult = true;
         Boolean result = instance.afegirSala(nouSala);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
      * Test of treureSala method, of class Jutjat.
-     * 
+     *
      * Es vol comprova que per damunt de index superior no falla.
      */
     @Test
@@ -56,7 +50,6 @@ public class JutjatTest2 {
         Sala expResult = null;
         Sala result = instance.treureSala(index);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
@@ -71,12 +64,11 @@ public class JutjatTest2 {
         Boolean expResult = true;
         Boolean result = instance.afegirJutge(nouJutge);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
      * Test of treureJutge method, of class Jutjat.
-     * 
+     *
      * Es vol comprova que per damunt de index superior no falla.
      */
     @Test
@@ -87,7 +79,6 @@ public class JutjatTest2 {
         Jutge expResult = null;
         Jutge result = instance.treureJutge(index);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
@@ -103,12 +94,11 @@ public class JutjatTest2 {
         Boolean expResult = true;
         Boolean result = instance.afegirJudici(nouJudici);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
      * Test of treureJudici method, of class Jutjat.
-     * 
+     *
      * Es vol comprova que per damunt de index superior no falla.
      */
     @Test
@@ -119,6 +109,5 @@ public class JutjatTest2 {
         Judici expResult = null;
         Judici result = instance.treureJudici(index);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 }

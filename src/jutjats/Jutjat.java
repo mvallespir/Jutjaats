@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package jutjats;
 
 import java.util.ArrayList;
@@ -9,7 +5,7 @@ import java.util.Date;
 
 /**
  *
- * @author MVC
+ * @author MVC i RSM
  */
 public class Jutjat {
 
@@ -31,7 +27,7 @@ public class Jutjat {
 
     /**
      * Afegeix una sala a l'array list, si l'objecte passat es null retorna fals
-     * sino retorna true.*
+     * sino retorna true.
      */
     public Boolean afegirSala(Sala nouSala) {
 
@@ -46,8 +42,8 @@ public class Jutjat {
 
     /**
      * Es pasa per parametre l'index de la Sala a treure, en cas que la sala
-     * sigui major o igual a 0 i menor a la grandari de la llista retornara la
-     * Sala en cas contrari retornara null
+     * sigui major o igual a 0 i menor a la grandaria de la llista retornara la
+     * Sala en cas contrari retornara null.
      */
     public Sala treureSala(int index) {
 
@@ -81,8 +77,8 @@ public class Jutjat {
 
     /**
      * Es pasa per parametre l'index del Jutge a treure, en cas que l'index
-     * sigui major o igual a 0 i menor a la grandari de la llista retornara el
-     * Jutge en cas contrari retornara null
+     * sigui major o igual a 0 i menor a la grandaria de la llista retornara el
+     * Jutge en cas contrari retornara null.
      */
     public Jutge treureJutge(int index) {
 
@@ -100,8 +96,8 @@ public class Jutjat {
     }
 
     /**
-     * Afegeix un Judici a l'array list, si l'objecte passat es null retorna fals
-     * sino retorna true.
+     * Afegeix un Judici a l'array list, si l'objecte passat es null retorna
+     * fals sino retorna true.
      */
     public Boolean afegirJudici(Judici nouJudici) {
 
@@ -116,8 +112,8 @@ public class Jutjat {
 
     /**
      * Es pasa per parametre l'index del Judici a treure, en cas que l'index
-     * sigui major o igual a 0 i menor a la grandari de la llista retornara el
-     * Judic en cas contrari retornara null
+     * sigui major o igual a 0 i menor a la grandaria de la llista retornara el
+     * Judic en cas contrari retornara null.
      */
     public Judici treureJudici(int index) {
 

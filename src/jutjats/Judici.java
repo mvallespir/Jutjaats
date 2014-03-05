@@ -103,7 +103,7 @@ class Judici {
      *
      */
     public Boolean setAdvocatDefensor(Advocat advocatDefensor) {
-        
+
         if (advocatDefensor != null && this.advocatDefensor == null) {
             this.advocatDefensor = advocatDefensor;
             advocatDefensor.afegirJudiciDefensor(this);
@@ -136,11 +136,11 @@ class Judici {
     }
 
     /**
-     * Es pasa per parametre l'objecte Sala, es comprova que no sigui null
-     * i que no hi hagi cap sala afegida a aquest judici. Si es compleixen
-     * les condicions inserta la sala a l'objete Judici i afegeix aquest judici
-     * al llistat de judicis de la sala.
-     * 
+     * Es pasa per parametre l'objecte Sala, es comprova que no sigui null i que
+     * no hi hagi cap sala afegida a aquest judici. Si es compleixen les
+     * condicions inserta la sala a l'objete Judici i afegeix aquest judici al
+     * llistat de judicis de la sala.
+     *
      */
     public Boolean setSala(Sala sala) {
 
@@ -156,7 +156,7 @@ class Judici {
         return llistatDates;
     }
 
-     //Pasant-l'hi un string amb la data el transforma i retorna el tipus Date.
+    //Pasant-l'hi un string amb la data el transforma i retorna el tipus Date.
     public Boolean afegirDate(String dateNove) {
         this.llistatDates = llistatDates;
         try {
@@ -175,6 +175,5 @@ class Judici {
     public String toString() {
         return "Judici{" + "delicte=" + delicte + ", jutge=" + jutge + ", advocatAcusacio=" + advocatAcusacio + ", advocatDefensor=" + advocatDefensor + ", sentencia=" + sentencia + ", sala=" + sala + '}';
     }
-    
-    
+
 }

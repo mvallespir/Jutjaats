@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package jutjats;
 
 import java.text.SimpleDateFormat;
@@ -14,7 +10,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author MVC
+ * @author MVC i RSM
  */
 public class SalaTest2 {
 
@@ -42,7 +38,6 @@ public class SalaTest2 {
         Boolean expResult = true;
         Boolean result = instance.afegirJudici(nouJudici);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
@@ -60,7 +55,6 @@ public class SalaTest2 {
         Judici expResult = null;
         Judici result = instance.treureJudici(index);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
@@ -82,8 +76,7 @@ public class SalaTest2 {
         casColacao.afegirDate("27-02-2014");
         casColacao.afegirDate("03-03-2014");
         casColacao.afegirDate("05-03-2014");
-        
-        
+
         instance.afegirJudici(casNos);
         instance.afegirJudici(casColacao);
 
