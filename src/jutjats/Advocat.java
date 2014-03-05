@@ -23,7 +23,7 @@ public class Advocat {
     
 
     public Advocat(String nom, String llinatges, String dataNaixament, String direccio, String poblacio) {
-        this.nom = nom;//Afegeix un Judici en cas de que sigui null retorna false sinos true.
+        this.nom = nom;//Afegeix un Judici en cas de que sigui null retorna false sino true.
         this.llinatges = llinatges;
         this.dataNaixament = afegirDataNaixament(dataNaixament);
         this.direccio = direccio;
@@ -32,7 +32,7 @@ public class Advocat {
         llistaJudicisAcusacio = new ArrayList<>();
     }
     
-    //Afegeix un Judici en cas de que sigui null retorna false sinos true.
+    //Afegeix un Judici en cas de que sigui null retorna false sino true.
     public Boolean afegirJudiciAcusacio(Judici nouJudici) {
 
         if (nouJudici != null) {
@@ -46,7 +46,7 @@ public class Advocat {
 
     /**
      * Es pasa per parametre l'index del Judici a treure, en cas que l'index
-     * sigui major o igual a 0 i menor a la grandari de la llista retornara el
+     * sigui major o igual a 0 i menor a la grandaria de la llista retornara el
      * Judici en cas contrari retornara null
      */
     public Judici treureJudiciAcusacio(int index) {
