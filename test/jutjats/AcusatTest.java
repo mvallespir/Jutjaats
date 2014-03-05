@@ -92,13 +92,13 @@ public class AcusatTest {
         casNos.setDelicte(roboGros);
         casNos.setJutge(new Jutge("Miquel", "Vallespir", "04-10-1992"));
         casNos.setSala(new Sala(2, 32));
-        
+
         assertEquals(instance.getLlistaJudicis().size(), 1);
-        
+
         for (Judici judici : instance.getLlistaJudicis()) {
             System.out.println(judici.toString());
         }
-        
-        
+
+
     }
 }
