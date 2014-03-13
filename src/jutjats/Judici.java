@@ -131,6 +131,10 @@ class Judici {
         return false;
     }
 
+    /**
+     * Geter de l'objecte sala.
+     * @return 
+     */
     public Sala getSala() {
         return sala;
     }
@@ -141,6 +145,7 @@ class Judici {
      * condicions inserta la sala a l'objete Judici i afegeix aquest judici al
      * llistat de judicis de la sala.
      *
+     * @return Retorna true o fals segons si ha anat be la inserció de la sala
      */
     public Boolean setSala(Sala sala) {
 

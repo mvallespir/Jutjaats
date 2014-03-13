@@ -71,6 +71,10 @@ public class Sala {
         return llistaJudicis;
     }
 
+    /**
+     * Metode per treure el numero de Sala.
+     * @return Retorna el numero de sala.
+     */
     public int getNumero() {
         return numero;
     }
