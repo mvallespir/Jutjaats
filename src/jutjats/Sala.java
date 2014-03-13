@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- *
+ *  Objecte Sala per implementar les sales del Jutjat
  * @author MVC i RSM
  */
 public class Sala {

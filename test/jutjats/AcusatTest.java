@@ -6,7 +6,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * 
+ * Clase Test per fer tests i proves de l'objecte Acusat.
  * @author MVC i RSM
  */
 public class AcusatTest {
