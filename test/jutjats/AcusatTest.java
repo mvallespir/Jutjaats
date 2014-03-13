@@ -7,6 +7,7 @@ import static org.junit.Assert.*;
 
 /**
  * Clase Test per fer tests i proves de l'objecte Acusat.
+ * 
  * @author MVC i RSM
  */
 public class AcusatTest {
@@ -23,6 +24,8 @@ public class AcusatTest {
     }
 
     /**
+     * Test per provar d'afegir un judici a l'objecte Acusat.
+     * 
      * Li passam un judici null i ens ha de retornar false. (Ha anat malament).
      */
     @Test
@@ -36,6 +39,8 @@ public class AcusatTest {
     }
 
     /**
+     * Test per provar de treure un judici de l'objecte Acusat.
+     * 
      * Li passam un index fora de rang, i ens ha de tornar null.
      */
     @Test
@@ -46,10 +51,11 @@ public class AcusatTest {
         Judici expResult = null;
         Judici result = instance.treureJudici(index);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
     }
 
     /**
+     * Test per afegir un judici correcte a l'objecte Acusat.
+     * 
      * Li passam un judici correcte i ens ha de tornar true. (Ha anat be).
      */
     @Test
@@ -63,6 +69,8 @@ public class AcusatTest {
     }
 
     /**
+     * Test per mostrar els judicis on està implicat l'objecte Acusat.
+     * 
      * Mostrar un llistat dels judicis que esta implicat un acusat.
      */
     @Test
