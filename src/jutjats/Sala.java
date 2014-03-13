@@ -4,14 +4,24 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
- *  Objecte Sala per implementar les sales del Jutjat
+ * Objecte Sala per implementar les sales del Jutjat
+ *
  * @author MVC i RSM
  */
 public class Sala {
 
+    /**
+     * Atribut del numero de la Sala.
+     */
     private int numero;
+    /**
+     * Atribut de la capacitat de la Sala.
+     */
     private int capacitat;
-    private ArrayList<Judici> llistaJudicis;
+    /**
+     * Llistat dels judicis selebrats a la sala.
+     */
+    private final ArrayList<Judici> llistaJudicis;
 
     /**
      * Constructor de l'objecte Sala.
@@ -46,6 +56,8 @@ public class Sala {
     /**
      * Afegeix un Judici a l'array list, si l'objecte passat es null retorna
      * fals sino retorna true.
+     *
+     * @param nouJudici Judici que es vol afegir.
      * @return Retorna true o fals segons com a anat la inserció del judici.
      */
     public Boolean afegirJudici(Judici nouJudici) {
@@ -63,7 +75,10 @@ public class Sala {
      * Es pasa per parametre l'index del Judici a treure, en cas que l'index
      * sigui major o igual a 0 i menor a la grandaria de la llista retornara el
      * Judic en cas contrari retornara null.
-     * @return Retorna l'objecte judici que s'ha cercat o null si no l'ha trobat.
+     *
+     * @param index Passam l'index de l'objecte que volem treure.
+     * @return Retorna l'objecte judici que s'ha cercat o null si no l'ha
+     * trobat.
      */
     public Judici treureJudici(int index) {
 
@@ -78,6 +93,7 @@ public class Sala {
 
     /**
      * Metode per treure tots els judicis d'una sala.
+     *
      * @return Retorna un array list de Judicis.
      */
     public ArrayList<Judici> getLlistaJudicis() {
@@ -95,6 +111,7 @@ public class Sala {
 
     /**
      * Metode per afegir el numero de sala.
+     *
      * @param numero Numero de la Sala.
      */
     public void setNumero(int numero) {
@@ -103,6 +120,7 @@ public class Sala {
 
     /**
      * Metode per treure la capacitat de la sala
+     *
      * @return Retorna un enter amb la capacitat de la sala.
      */
     public int getCapacitat() {
@@ -111,6 +129,7 @@ public class Sala {
 
     /**
      * Metode per afegir la capacitat de la Sala.
+     *
      * @param capacitat Capacitat de la sala.
      */
     public void setCapacitat(int capacitat) {
@@ -118,7 +137,8 @@ public class Sala {
     }
 
     /**
-     * 
+     * Metode per mostra informació.
+     *
      * @return Retorna un String amb informació de la Sala.
      */
     @Override
