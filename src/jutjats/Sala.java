@@ -13,6 +13,12 @@ public class Sala {
     private int capacitat;
     private ArrayList<Judici> llistaJudicis;
 
+    /**
+     * Constructor de l'objecte Sala.
+     *
+     * @param numero Numero de Sala.
+     * @param capacitat Capacitat de la Sala.
+     */
     public Sala(int numero, int capacitat) {
         this.numero = numero;
         this.capacitat = capacitat;
@@ -20,9 +26,10 @@ public class Sala {
     }
 
     /**
-     * Recorr tots els judicis de la Sala i va agafant totes les dates ocupades
-     * i les fica dins un array list que al final retorna.
+     * Recorr tots els judicis de la Sala i va agafant totes les dates ocupades.
+     * Les fica dins un array list que al final retorna.
      *
+     * @return Retorna un array list de dates
      */
     public ArrayList<Date> datesOcupade() {
 
@@ -73,6 +80,7 @@ public class Sala {
 
     /**
      * Metode per treure el numero de Sala.
+     *
      * @return Retorna el numero de sala.
      */
     public int getNumero() {
