@@ -46,6 +46,7 @@ public class Sala {
     /**
      * Afegeix un Judici a l'array list, si l'objecte passat es null retorna
      * fals sino retorna true.
+     * @return Retorna true o fals segons com a anat la inserció del judici.
      */
     public Boolean afegirJudici(Judici nouJudici) {
 
@@ -62,6 +63,7 @@ public class Sala {
      * Es pasa per parametre l'index del Judici a treure, en cas que l'index
      * sigui major o igual a 0 i menor a la grandaria de la llista retornara el
      * Judic en cas contrari retornara null.
+     * @return Retorna l'objecte judici que s'ha cercat o null si no l'ha trobat.
      */
     public Judici treureJudici(int index) {
 
@@ -74,6 +76,10 @@ public class Sala {
 
     }
 
+    /**
+     * Metode per treure tots els judicis d'una sala.
+     * @return Retorna un array list de Judicis.
+     */
     public ArrayList<Judici> getLlistaJudicis() {
         return llistaJudicis;
     }
@@ -87,18 +93,34 @@ public class Sala {
         return numero;
     }
 
+    /**
+     * Metode per afegir el numero de sala.
+     * @param numero Numero de la Sala.
+     */
     public void setNumero(int numero) {
         this.numero = numero;
     }
 
+    /**
+     * Metode per treure la capacitat de la sala
+     * @return Retorna un enter amb la capacitat de la sala.
+     */
     public int getCapacitat() {
         return capacitat;
     }
 
+    /**
+     * Metode per afegir la capacitat de la Sala.
+     * @param capacitat Capacitat de la sala.
+     */
     public void setCapacitat(int capacitat) {
         this.capacitat = capacitat;
     }
 
+    /**
+     * 
+     * @return Retorna un String amb informació de la Sala.
+     */
     @Override
     public String toString() {
         return "Sala:" + "Numero: " + numero + ", Capacitat: " + capacitat + '.';
