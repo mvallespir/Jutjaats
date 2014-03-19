@@ -7,6 +7,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
+ * Mètodes i funcions de l'objecte Delicte.
  *
  * @author MVC i RSM
  */
@@ -21,7 +22,13 @@ public class Delicte {
         this.descripcio = descripcio;
     }
 
-    //Es pasa per parametre l'acusat, comprova que no sigui null i que no en tengui cap ja insertat.
+    /**
+     * Mètode per afegir un acusat a l'objecte Delicte.
+     *
+     * Es pasa per parametre l'acusat, comprova que no sigui null i que no en tengui cap ja insertat.
+     *
+     * @return
+     */
     public Boolean afegirAcusat(Acusat nouAcusat) {
 
         if (this.acusat == null && nouAcusat != null) {
