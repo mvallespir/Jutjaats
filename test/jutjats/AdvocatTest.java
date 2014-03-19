@@ -7,7 +7,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- *
+ * Clase Test per fer tests i proves de l'objecte Advocat.
+ * 
  * @author MVC i RSM
  */
 public class AdvocatTest {
@@ -24,6 +25,8 @@ public class AdvocatTest {
     }
 
     /**
+     * Test per provar d'afegir un judici com acusació a l'objecte Advocat.
+     * 
      * Li passam un judici null i ens ha de retornar false. (No ha anat be).
      */
     @Test
