@@ -8,8 +8,9 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
+ * Mètodes i funcions de l'objecte Advocat.
  *
- * @author MVC & RSM
+ * @author MVC i RSM
  */
 public class Advocat {
 
@@ -31,7 +32,13 @@ public class Advocat {
         llistaJudicisAcusacio = new ArrayList<>();
     }
 
-    //Afegeix un Judici en cas de que sigui null retorna false sino true.
+    /**
+     * Mètode per afegir un judici com a acusació a l'objecte Advocat.
+     *
+     * Afegeix un Judici en cas de que sigui null retorna false sino true.
+     *
+     * @return
+     */
     public Boolean afegirJudiciAcusacio(Judici nouJudici) {
 
         if (nouJudici != null) {
@@ -44,9 +51,13 @@ public class Advocat {
     }
 
     /**
+     * Mètode per treure un judici com a acusació a l'objecte Advocat.
+     *
      * Es pasa per parametre l'index del Judici a treure, en cas que l'index
      * sigui major o igual a 0 i menor a la grandaria de la llista retornara el
      * Judici en cas contrari retornara null.
+     *
+     * @return
      */
     public Judici treureJudiciAcusacio(int index) {
 
@@ -59,14 +70,25 @@ public class Advocat {
 
     }
 
+    /**
+     * Mètode per obtenir un judici com a acusació a l'objecte Advocat.
+     *
+     * Retorna la llista de judicis com a acusació de l'objecte Advocat.
+     *
+     * @return
+     */
     public ArrayList<Judici> getLlistaJudicisAcusacio() {
         return llistaJudicisAcusacio;
     }
 
     /**
+     * Mètode per mostrar la llista de judicis com a acusació completa a
+     * l'objecte Advocat.
+     *
      * Crea un Array List de Judici provisional on fica tots els judicis com a
      * defensor, com a acusació i retorna l'Array List.
      *
+     * @return
      */
     public ArrayList<Judici> mostraLlistaJudicisComplet() {
 
@@ -83,7 +105,13 @@ public class Advocat {
         return provisional;
     }
 
-    //Afegeix un Judici en cas de que sigui null retorna false sino true.
+    /**
+     * Mètode per afegir un judici com a defensor de l'objecte Advocat.
+     *
+     * Afegeix un Judici en cas de que sigui null retorna false sino true.
+     *
+     * @return
+     */
     public Boolean afegirJudiciDefensor(Judici nouJudici) {
 
         if (nouJudici != null) {
@@ -96,9 +124,13 @@ public class Advocat {
     }
 
     /**
+     * Mètode per mostrar els judicis com a defensor de l'objecte Advocat.
+     *
      * Es pasa per parametre l'index del Judici a treure, en cas que l'index
      * sigui major o igual a 0 i menor a la grandaria de la llista retornara el
      * Judici en cas contrari retornara null.
+     *
+     * @return
      */
     public Judici treureJudiciDefensor(int index) {
 
@@ -111,10 +143,24 @@ public class Advocat {
 
     }
 
+    /**
+     * Mètode per mostrar els judicis com a defensor de l'objecte Advocat.
+     *
+     * Retorna la llista de judicis com a defensor de l'objecte Advocat.
+     *
+     * @return
+     */
     public ArrayList<Judici> getLlistaJudicisDefensor() {
         return llistaJudicisDefensor;
     }
 
+          /**
+     * Mètode per obtenir el nom i llinatges de l'objecte Advocat com a defensor.
+     *
+     * Retorna el nom de l'objecte Advocat com a defensor.
+     *
+     * @return
+     */ 
     public String getNomComplet() {
         return nom + " " + llinatges;
     }
