@@ -8,6 +8,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
+ * Mètodes i funcions de l'objecte Acusat.
  *
  * @author MVC i RSM
  */
@@ -30,8 +31,12 @@ class Acusat {
     }
 
     /**
+     * Mètode per afegir un judici a l'objecte Acusat.
+     *
      * Afegeix un Judici a l'array list, si l'objecte passat es null retorna
      * fals sino retorna true.
+     *
+     * @return
      */
     public Boolean afegirJudici(Judici nouJudici) {
 
@@ -45,9 +50,13 @@ class Acusat {
     }
 
     /**
+     * Mètode per treure un judici de l'objecte Acusat.
+     *
      * Es pasa per parametre l'index del Judici a treure, en cas que l'index
      * sigui major o igual a 0 i menor a la grandaria de la llista retornara el
      * Judici en cas contrari retornara null.
+     *
+     * @return
      */
     public Judici treureJudici(int index) {
 
@@ -60,55 +69,121 @@ class Acusat {
 
     }
 
+    /**
+     * Mètode per obtenir la llista de judicis de l'objecte Acusat.
+     *
+     * Agafa la llista de judicis i la retorna.
+     *
+     * @return
+     */
     public ArrayList<Judici> getLlistaJudicis() {
         return llistaJudicis;
     }
 
+    /**
+     * Mètode per obtenir el nom complet de l'objecte Acusat.
+     *
+     * Retorna el nom i llinatges amb un espai enmig.
+     *
+     * @return
+     */
     //Concatena el nom i els llinatges.
     public String getNomComplet() {
         return nom + " " + llinatges;
     }
 
+    /**
+     * Mètode per obtenir el nom de l'objecte Acusat.
+     *
+     * @return
+     */
     public String getNom() {
         return nom;
     }
 
+    /**
+     * Mètode per assignar el nom de l'objecte Acusat.
+     *
+     * @return
+     */
     public void setNom(String nom) {
         this.nom = nom;
     }
 
+    /**
+     * Mètode per obtenir els llinatges de l'objecte Acusat.
+     *
+     * @return
+     */
     public String getLlinatges() {
         return llinatges;
     }
 
+    /**
+     * Mètode per assignar els llinatges de l'objecte Acusat.
+     *
+     * @return
+     */
     public void setLlinatges(String llinatges) {
         this.llinatges = llinatges;
     }
 
+    /**
+     * Mètode per obtenir la direcció de l'objecte Acusat.
+     *
+     * @return
+     */
     public String getDireccio() {
         return direccio;
     }
 
+    /**
+     * Mètode per assignar la direcció de l'objecte Acusat.
+     *
+     * @return
+     */
     public void setDireccio(String direccio) {
         this.direccio = direccio;
     }
 
+    /**
+     * Mètode per obtenir la població de l'objecte Acusat.
+     *
+     * @return
+     */
     public String getPoblacio() {
         return poblacio;
     }
 
+    /**
+     * Mètode per assignar la població de l'objecte Acusat.
+     *
+     * @return
+     */
     public void setPoblacio(String poblacio) {
         this.poblacio = poblacio;
     }
 
-    //Treu la data amb format dia-mes-any amb String.
+    /**
+     * Mètode per obtenir la data de naixament de l'objecte Acusat.
+     *
+     * Treu la data amb format dia-mes-any amb String.
+     *
+     * @return
+     */
     public String getDataNaixament() {
         String format = "dd-MM-yyyy";
         SimpleDateFormat sdf = new SimpleDateFormat(format);
         return sdf.format(dataNaixament);
     }
 
-    //Pasant-l'hi un string amb la data el transforma i retorna al tipus Date.
+    /**
+     * Mètode per obtenir la data de naixament de l'objecte Acusat.
+     *
+     * Pasant-l'hi un string amb la data el transforma i retorna al tipus Date.
+     *
+     * @return
+     */
     private Date afegirDataNaixament(String dataDelicte) {
         String format = "dd-MM-yyyy";
         SimpleDateFormat sdf = new SimpleDateFormat(format);
