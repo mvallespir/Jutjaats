@@ -95,6 +95,8 @@ class Acusat {
     /**
      * Mètode per obtenir el nom de l'objecte Acusat.
      *
+     * Retorna el nom obtingut.
+     *
      * @return
      */
     public String getNom() {
@@ -103,6 +105,8 @@ class Acusat {
 
     /**
      * Mètode per assignar el nom de l'objecte Acusat.
+     *
+     * Assigna el nom a aquest mètode.
      *
      * @return
      */
@@ -113,6 +117,8 @@ class Acusat {
     /**
      * Mètode per obtenir els llinatges de l'objecte Acusat.
      *
+     * Retorna els llinatges obtinguts.
+     *
      * @return
      */
     public String getLlinatges() {
@@ -121,6 +127,8 @@ class Acusat {
 
     /**
      * Mètode per assignar els llinatges de l'objecte Acusat.
+     *
+     * Assigna els llinatges a aquest mètode.
      *
      * @return
      */
@@ -131,6 +139,8 @@ class Acusat {
     /**
      * Mètode per obtenir la direcció de l'objecte Acusat.
      *
+     * Retorna la direccó obtinguda.
+     *
      * @return
      */
     public String getDireccio() {
@@ -139,6 +149,8 @@ class Acusat {
 
     /**
      * Mètode per assignar la direcció de l'objecte Acusat.
+     *
+     * Assigna la direcció a aquest mètode.
      *
      * @return
      */
@@ -149,6 +161,8 @@ class Acusat {
     /**
      * Mètode per obtenir la població de l'objecte Acusat.
      *
+     * Retorna la població obtinguda.
+     *
      * @return
      */
     public String getPoblacio() {
@@ -157,6 +171,8 @@ class Acusat {
 
     /**
      * Mètode per assignar la població de l'objecte Acusat.
+     *
+     * Assigna la població a aquest mètode.
      *
      * @return
      */
