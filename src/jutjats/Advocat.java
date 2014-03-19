@@ -154,57 +154,128 @@ public class Advocat {
         return llistaJudicisDefensor;
     }
 
-          /**
-     * Mètode per obtenir el nom i llinatges de l'objecte Advocat com a defensor.
+    /**
+     * Mètode per obtenir el nom i llinatges de l'objecte Advocat com a
+     * defensor.
      *
-     * Retorna el nom de l'objecte Advocat com a defensor.
+     * Retorna el nom i llinatges de l'objecte Advocat com a defensor.
      *
      * @return
-     */ 
+     */
     public String getNomComplet() {
         return nom + " " + llinatges;
     }
 
+    /**
+     * Mètode per obtenir el nom de l'objecte Advocat com a defensor.
+     *
+     * Retorna el nom de l'objecte Advocat com a defensor.
+     *
+     * @return
+     */
     public String getNom() {
         return nom;
     }
 
+    /**
+     * Mètode per assignar el nom de l'objecte Advocat com a defensor.
+     *
+     * Assigna el nom a aquest mètode.
+     *
+     * @return
+     */
     public void setNom(String nom) {
         this.nom = nom;
     }
 
+    /**
+     * Mètode per obtenir els llinatges de l'objecte Advocat com a defensor.
+     *
+     * Retorna els llinatges de l'objecte Advocat com a defensor.
+     *
+     * @return
+     */
     public String getLlinatges() {
         return llinatges;
     }
 
+    /**
+     * Mètode per assignar els llinatges de l'objecte Advocat com a defensor.
+     *
+     * Assigna els llinatges a aquest mètode.
+     *
+     * @return
+     */
     public void setLlinatges(String llinatges) {
         this.llinatges = llinatges;
     }
 
+    /**
+     * Mètode per obtenir la direcció de l'objecte Advocat com a defensor.
+     *
+     * Retorna la direcció de l'objecte Advocat com a defensor.
+     *
+     * @return
+     */
     public String getDireccio() {
         return direccio;
     }
 
+    /**
+     * Mètode per assignar la direcció de l'objecte Advocat com a defensor.
+     *
+     * Assigna la direcció a aquest mètode.
+     *
+     * @return
+     */
     public void setDireccio(String direccio) {
         this.direccio = direccio;
     }
 
+    /**
+     * Mètode per obtenir la població de l'objecte Advocat com a defensor.
+     *
+     * Retorna la població de l'objecte Advocat com a defensor.
+     *
+     * @return
+     */
     public String getPoblacio() {
         return poblacio;
     }
 
+    /**
+     * Mètode per assignar la població de l'objecte Advocat com a defensor.
+     *
+     * Assigna la població a aquest mètode.
+     *
+     * @return
+     */
     public void setPoblacio(String poblacio) {
         this.poblacio = poblacio;
     }
 
-    //Treu la data amb format dia-mes-any amb String.
+    /**
+     * Mètode per obtenir la data de naixament de l'objecte Advocat com a
+     * defensor.
+     *
+     * Treu la data amb format dia-mes-any amb String.
+     *
+     * @return
+     */
     public String getDataNaixament() {
         String format = "dd-MM-yyyy";
         SimpleDateFormat sdf = new SimpleDateFormat(format);
         return sdf.format(dataNaixament);
     }
 
-    //Pasant-l'hi un string amb la data el transforma i retorna el tipus Date
+    /**
+     * Mètode per afegir la data de naixament de l'objecte Advocat com a
+     * defensor.
+     *
+     * Pasant-l'hi un string amb la data el transforma i retorna el tipus Date.
+     *
+     * @return
+     */
     private Date afegirDataNaixament(String dataDelicte) {
         String format = "dd-MM-yyyy";
         SimpleDateFormat sdf = new SimpleDateFormat(format);
